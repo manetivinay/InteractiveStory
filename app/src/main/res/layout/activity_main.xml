@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/titleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/title_image_view"
+        android:scaleType="fitXY"
+        android:src="@drawable/main_title"/>
+
+
+    <Button
+        android:id="@+id/start_your_adventure_button"
+        style="@style/ButtonFont"
+        android:layout_alignParentBottom="true"
+        android:text="@string/start_your_adventure"/>
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start_your_adventure_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Enter your name here..."
+        android:maxLength="30"/>
+</RelativeLayout>
